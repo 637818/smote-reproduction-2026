@@ -4,6 +4,15 @@
 undersampling versus SMOTE plus undersampling, stratified 10 fold cross validation, on Pima, Phoneme, Oil and Mammography.
 SMOTE and the undersampling rule are implemented from scratch and tested inside the notebook.
 
+## Data
+Public copies of the four datasets are downloaded from github.com/jbrownlee/Datasets (original sources are described in Section 5.1 of the paper).
+
+## Output
+The notebook prints the comparison table (paper versus this reproduction) and saves results/table_auc.csv and results/roc_curves.png.
+
+## Limits
+Only Pima, Phoneme, Oil and Mammography are reproduced (4 of the 8 datasets of Table 3), with a scikit-learn decision tree instead of C4.5. SMOTE plus undersampling beats plain undersampling on three of the four datasets, but the gains are about as large as the spread between repeats.
+
 ## Run
 ```
 pip install numpy pandas scikit-learn matplotlib jupyter
