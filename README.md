@@ -16,7 +16,7 @@ Only Pima, Phoneme, Oil and Mammography are reproduced (4 of the 8 datasets of T
 ## Run
 ```
 pip install numpy pandas scikit-learn matplotlib jupyter
-jupyter notebook SMOTE_reproduction.ipynb     # then Run All
+jupyter notebook SMOTE_reproduction_Final_Version.ipynb     # then Run All
 ```
 The notebook downloads the four csv files into `data/` by itself (internet needed). A full run takes about 8 to 11 minutes on one CPU core;
 set `REPEATS = 1` in the parameter cell for a quick run. It also works in Google Colab.
